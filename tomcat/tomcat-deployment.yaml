@@ -9,7 +9,7 @@ spec:
     - port: 8080
   selector:
     app: tomcat
-    tier: frontend
+    tier: nodeport
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
