@@ -29,14 +29,7 @@ spec:
       containers:
       - image: kayrus/goapp
         name: tomcat
-        env:
-        - name: MYSQL_HOST
-          value: tomcat-mysql
-        - name: MYSQL_PASS
-          valueFrom:
-            secretKeyRef:
-              name: mysql-pass
-              key: password.txt
+       
         ports:
         - containerPort: 8080
           name: tomcat
