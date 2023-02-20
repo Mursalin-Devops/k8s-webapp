@@ -9,7 +9,7 @@ spec:
     - port: 8080
   selector:
     app: tomcat
-    tier: Loadbalancer
+    tier: nodeports
 ---
 apiVersion: extensions/v1beta1
 kind: Deployment
